@@ -1,0 +1,112 @@
+<!-- Menu dọc  -->
+
+<style>
+    .menu{
+    padding: 0px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+}
+
+.menu a{
+   
+    display: block;
+    border-bottom: 1px dotted orangered;
+    color: orangered;
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: none;
+    padding: 8px 5px 8px 30px;
+}
+.menu a:hover{
+    border-bottom: 1px dotted white;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+/* Menu đứng  */
+.hmenu{
+            list-style-type: none;
+            background: orangered;
+            width: 600px;
+            border-radius: 7px;
+            position: relative;
+            height: 40px;
+        }
+        .hmenu>li{
+            float:left;
+        }
+        .hmenu>li>a{
+            text-decoration: none;
+            font-variant: small-caps;
+            color: white;
+            margin: 0px 20px ;
+            line-height: 40px;
+        }
+    .vmenu{
+    list-style-type: none;
+    box-shadow: 0px 0px 5px red;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 215px; */
+    display: none; 
+
+
+    
+    }
+    .vmenu>li>a{
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px dotted orange;
+    line-height: 30px;
+    font-variant: small-caps;
+    color: orangered;
+    padding-left: 25px;
+    /* background-image:url('img/sinhvien.png')no-repeat left center; */
+    padding-top: 10px;
+
+    }
+.vmenu>li>a:hover{
+    color: blue;
+    /* background: url("img/sinhvien.png") no-repeat left center; */
+    }
+
+.hmenu li:hover .vmenu{
+    display: block;
+
+}
+
+</style>
+
+<ul class="menu">
+    <li> <a href="">Máy tính xách tay</a></li>
+    <li> <a href="">Điện thoại di động</a></li>
+    <li> <a href="">Máy quay phim</a></li>
+    <li> <a href="">Máy chụp ảnh</a></li>
+</ul>
+
+
+<!-- Menu ngang  -->
+
+
+<ul class="hmenu">
+    <li><a href="">Trang chủ</a> </li>
+    <li><a href="">Giới thiệu</a> 
+        <ul class="vmenu">
+            <li><a href="#">hàng bán chạy</a></li>
+            <li><a href="#">hàng yêu thích </a></li>
+            <li><a href="#">hàng mới </a></li>
+            <li><a href="#">hàng đặc biệt</a></li>
+            <li><a href="#">hàng giảm giá</a></li>
+            
+        </ul>                                                                                                                                                                                                                                           
+    </li>
+    <li><a href="">Liên hệ</a> </li>
+    <li><a href="">Hỏi đáp</a> </li>
+    <li><a href="">Góp í</a> </li>
+</ul>

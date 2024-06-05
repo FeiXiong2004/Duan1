@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Font-awesome/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="web--container">
+
+        <div class="web--header">
+            <div class="web--header--1">
+                <div class="header--logo">
+                    <img src="../upload/logo_white.png" alt="">
+                    <p>PETVITALITY</p>
+                </div>
+                <div class="header--common">
+                    <!-- <div class="header--contact">
+                        <div class="header--phone">
+                            <i class="fas fa-phone"></i>
+                            (+84) 012345678
+                        </div>
+                        <hr style="margin-top: 10px; margin-bottom: 10px;">
+                        <div class="header--email">
+                            <i class="fas fa-envelope"></i>
+                            sunpet@gmail.com
+                        </div>
+                    </div> -->
+                    <div class="header--cart">
+                        <a href="Gio_hang.html">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="btn-group dropdown__hover user--position dropdown">
+                        <button class="btn" type="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><i class="fas fa-user"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-content ">
+                            <a class="dropdown-item " href="Dang_ky.html" id="dangky">Đăng ký</a>
+                        
+                            <a class="dropdown-item" href="Dang_nhap.html" id="dangnhap">Đăng nhập</a>
+                            
+                            <a class="dropdown-item" href="Xemthongtin.html" id="xemthongtin">Xem thông tin</a>
+                           
+                            <a class="dropdown-item" href="#" id="dangxuat" onclick="dangXuat()">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md sticky-top">
+            <!-- sticky top dán chặt ở trên, na..md thì từ kích thước medium trở lên thì nó sẽ expand ra -->
+            <div class="container-fluid">
+                <!-- container-fluid là sẽ chiếm toàn bộ chiều ngang -->
+                <div class="nav" data-target="collapse">
+                    <nav class="nav__pc">
+                        <ul class="navbar-nav ml-auto">
+                            <!-- cho phép hiện các cái đường link khi co trang mình vào-->
+                            <!-- ml auto là auto margin left -->
+                            <li class="nav-item">
+                                <!-- nav-item quy định màu là màu xanh, flex 1, mỗi item cách ra một khoảng -->
+                                <a class="nav-link" href="#">TRANG CHỦ</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="Contact.html" class="nav-link">LIÊN HỆ</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="Product.html" class="nav-link">SẢN PHẨM</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="Blog_Trangchu.html" class="nav-link">BLOG</i></a>
+                            </li> -->
+
+                        </ul>
+                    </nav>
+                    <label for="nav--input" class="nav__bars-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" class="nav__input" name="" id="nav--input">
+
+                    <label for="nav--input" class="navbar--overlay"></label>
+                    <nav for="nav--input" class="nav--bar">
+                        <label for="nav--input" class="nav--bar--close">
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <ul class="nav__list">
+                            <li>
+                                <a class="nav--link" href="#"><i class="fas fa-home"></i>TRANG CHỦ </a>
+                            </li>
+
+                            <li>
+                                <a href="Product.html" class="nav--link"><i class="fas fa-dolly"></i>SẢN PHẨM </a>
+                            </li>
+                         </ul>
+                    </nav>
+                </div>
+
+                <!-- search -->
+                <div class="search--bar">
+                    <input type="text" value="" name="search" id="search" placeholder="Bạn muốn tìm gì?" autocomplete="off"
+                        class="search--input">
+                    <button type="button" class="search--button" onclick="timKiemSanPham()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+        <!-- banner 1 -->
+        <div class="web--banner">
+            <img src="../Image/banner1.png" alt="">
+        </div>
+        <!-- chúng tôi có gì cho thú cưng? -->
+        <div class="web--dogcat">
+            <div class="web--content">
+                <p>Chúng tôi có gì cho thú cưng của bạn</p>
+            </div>
+            <div class="web--dogcat--detail">
+                <div class="web--dog">
+                    <img src="../Image/dogava.jpg" class="rounded-circle" alt="">
+                    <p><a href="../HTML/Product.html">Dành cho chó cưng</a></p>
+                </div>
+                <div class="web--cat">
+                    <img src="../Image/catava.jpg" class="rounded-circle" alt="">
+                    <p><a href="../HTML/Product.html">Dành cho mèo yêu</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Sản phẩm nổi bật -->
+        <div class="web--special">
+            <p>SẢN PHẨM NỔI BẬT</p>
+            <div class="web--special--block justify-content-center">
+                <div class="special--product--item">
+                    <a href="../HTML_Chitiet_sanpham/Detail1.html"><div class="special--product--detail">
+                        <div class="special--product--img">
+                            <img src="../Image/1-1.jpg" alt="">
+                        </div>
+                        <div class="special--product--name">
+                            <p>Sữa bột cho mèo 110g Dr.Kyan Precaten</p>
+                        </div>
+                        <div class="special--product--price justify-content-center">
+                            <p>Giá: 500.000đ</p>
+                        </div>
+                    </div></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- bé yêu ăn gì -->
+        <div class="web--eatwhat">
+            <div class="web--eatwhat--content">
+                <p>BÉ YÊU ĂN GÌ?</p>
+            </div>
+
+            <div class="web--eatdogcat">
+                <div class="web--eatdog">
+                    <div class="web--eatdog--block">
+                        <p>CHÓ CƯNG</p>
+                    </div>
+                    <div class="web--eatdog--detail1">
+                        <a href="../HTML_Chitiet_sanpham/Detail17.html"><div class="special--product--detail1">
+                            <div class="special--product--img">
+                                <img src="../Image/17.1.png" alt="">
+                            </div>
+                            <div class="special--product--name">
+                                <p>Thức ăn cao cấp dành cho chó FIBs</p>
+                            </div>
+                            <div class="special--product--price justify-content-center">
+                                <p>Giá: 199.000đ</p>
+
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="web--eatcat ">
+                    <div class="web--eatcat--block">
+                        <p>MÈO YÊU</p>
+                    </div>
+                    <div class="web--eatcat--detail1 col-">
+                        <a href="../HTML_Chitiet_sanpham/Detail1.html"><div class="special--product--detail1">
+                            <div class="special--product--img">
+                                <img src="../Image/1-1.jpg" alt="">
+                            </div>
+                            <div class="special--product--name">
+                                <p>Sữa bột cho mèo 110g Dr.Kyan Precaten</p>
+                            </div>
+                            <div class="special--product--price justify-content-center">
+                                <p>Giá: 500.000đ</p>
+
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="button--more">
+                <button type="button" class="web__button--eatdogcat" name="more"><a href="../HTML/Product.html">XEM
+                        THÊM</a></button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="web--discount">
+            <img src="../Image/discount.png" alt="">
+        </div>
+</div>
+</body>
+
+</html>
